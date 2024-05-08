@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>Login page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body >
+	<h1> OTP VERIFICATION</h1>
+	<hr>
+	<br>
+
+	<form action="/login", method="POST">
+		<label>USERNAME</label><br>
+		<input type="text" name="username" placeholder="username"><br>
+		<label>PASSWORD</label><br>
+		<input type="password" name="password" placeholder="password"><br>
+		<p>Mobile Number should be with Country code. e.g. +91 73030xxxxx</p><br>
+		<label>MOBILE NO.</label>
+		<input type="tel" name="number" placeholder="Mobile Number"><br><br>
+		<input type="submit" class="btn btn-primary btn-lg" value="Get OTP"><br><br>
+
+	</form>
+
+
+</body>
+</html>
+
+
